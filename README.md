@@ -15,3 +15,27 @@ The dataset used is the [Beijing Air Pollution](https://archive.ics.uci.edu/ml/d
 The EDA focused around time series decomposition. We break the time series into 4 components: level, trend, Seasonality, and noise. We have to make sure that our data is stationary by performing multiple tests as well as splitting our series into smaller ones to identify subtrends. We also perform a Dickey-Fuller Test to confirm stationarity.
 
 ![Alt text](Time-series-Analysis-Air-Pollution/results/pollution.png) 
+
+## Models Tested
+- Autoregressiion(AR)
+- Autoregressive moving Average (ARIMA)
+- Seasonal Autoregressive integrated moving average (SARIMA)
+- XGBoost
+- Prophet
+- DeepAR
+- Lightgbm
+
+## Results
+
+Below is a graphic representation of the Autoregressive model. We can see the Autoregressive model performs alright on the dataset and predicts well enough to capture the major swings in the time series datset.
+![Alt text](Time-series-Analysis-Air-Pollution/results/Autoregression.png) 
+
+If we move over to ARIMA we see that the mode performs a lot better.It is almost identitical to the original dataset.
+
+![Alt text](Time-series-Analysis-Air-Pollution/results/ARIMA.png) 
+
+The best model was lightgbm with an RMSE of 43. The worst was DeepAR, partly I think becuase the datset is not large or robust enough.
+
+## Future Steps
+
+I will fix the Github to show all the RMSE and all the scores from each model. Another work on this project could be to apply Nueral Nets or other davanced models to see how well they perform.
