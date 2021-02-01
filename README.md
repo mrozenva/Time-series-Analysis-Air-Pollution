@@ -11,3 +11,5 @@ The dataset used is the [Beijing Air Pollution](https://archive.ics.uci.edu/ml/d
 
 ## EDA
 ![Alt text](Time-series-Analysis-Air-Pollution/results/pollution.png) 
+
+The EDA focused around time series decomposition
