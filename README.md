@@ -10,6 +10,8 @@ Air pollution has been an increasingly prevelant problem all over the world, but
 The dataset used is the [Beijing Air Pollution](https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data). The dataset contains just over 1200 rows and 9 columns that we manipulated when we were importing the data. Please see the Getting the Data notebook to get the full picture. I also decided to resampe the datset with daily frequency for both easier handling and proximity to real use case scenarios.
 
 ## EDA
-![Alt text](Time-series-Analysis-Air-Pollution/results/pollution.png) 
+![Alt text](Time-series-Analysis-Air-Pollution/results/Trends.png) 
 
-The EDA focused around time series decomposition
+The EDA focused around time series decomposition. We break the time series into 4 components: level, trend, Seasonality, and noise. We have to make sure that our data is stationary by performing multiple tests as well as splitting our series into smaller ones to identify subtrends. We also perform a Dickey-Fuller Test to confirm stationarity.
+
+![Alt text](Time-series-Analysis-Air-Pollution/results/pollution.png) 
